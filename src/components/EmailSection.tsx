@@ -53,6 +53,9 @@ const EmailSection = () => {
           <Link href="https://github.com/DoPhuc22">
             <Image src={"/github-icon.svg"} width={60} height={50} alt="Github Icon" />
           </Link>
+          <Link href="https://www.facebook.com/profile.php?id=100015298207124">
+            <Image src={"/facebook-icon.svg"} width={60} height={50} alt="Facebook Icon" />
+          </Link>
         </div>
       </div>
       <div>

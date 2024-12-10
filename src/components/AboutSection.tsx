@@ -83,11 +83,11 @@ const AboutSection = () => {
 
     return(
         <section className="text-white" id="about">
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+            <div className="md:grid md:grid-cols-2 gap-8 lg:items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
                 <Image src="/images/about-image.png" width={500} height={500} className="rounded-xl" alt={"about image"}/>
                 <div className="flex flex-col h-full mt-4 md:mt-10 text-justify">
                     <h2 className="text-4xl font-bold text-white mb-4">About me</h2>
-                    <p className="text-base lg:text-lg">
+                    <p className="text-base xl:text-lg">
                         Motivated and detail-oriented Fullstack Website Developer with
                         a strong foundation in both front-end andback-end development. 
                         Proficient in building dynamic and responsive websites using 
