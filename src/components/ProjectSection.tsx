@@ -1,67 +1,67 @@
-import { Col, Row } from "antd"
-import React, { useRef, useState } from "react"
-import ProjectTag from "./ProjectTag"
-import { animate, motion, useInView } from "framer-motion"
-import ProjectCard from "./ProjectCard"
+import { Col, Row } from "antd";
+import React, { useRef, useState } from "react";
+import ProjectTag from "./ProjectTag";
+import { animate, motion, useInView } from "framer-motion";
+import ProjectCard from "./ProjectCard";
 
 const ProjectData = [
-    {
-        id: 1,
-        title: "Cinema management website (Laravel)",
-        description: "",
-        image: "./images/projects/Project_2.png",
-        tag: ["All", "Web"],
-        gitUrl: "https://github.com/DoPhuc22/project2.git",
-        previewUrl: "/",
-    },
-    {
-      id: 2,
-      title: "Crud React",
-      description: "Updating ...",
-      image: "./images/projects/Crud_React.png",
-      tag: ["All", "Web"],
-      gitUrl: "https://github.com/DoPhuc22/React-CRUD.git",
-      previewUrl: "/",
-    },
-    {
-      id: 3,
-      title: "Mobile Game",
-      description: "",
-      image: "./images/projects/Mobile.png",
-      tag: ["All", "Mobile"],
-      gitUrl: "https://github.com/DoPhuc22/Mobile-game.git",
-      previewUrl: "/",
-    },
-    {
-      id: 4,
-      title: "Furniture Shop (PHP, MySQL)",
-      description: "",
-      image: "./images/projects/Project_1.png",
-      tag: ["All", "Web"],
-      gitUrl: "https://github.com/DoPhuc22/Project1.git",
-      previewUrl: "/",
-    },
-]
+  {
+    id: 1,
+    title: "Cinema management website (Laravel)",
+    description: "",
+    image: "./images/projects/Project_2.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/DoPhuc22/project2.git",
+    previewUrl: "/",
+  },
+  {
+    id: 2,
+    title: "Crud React",
+    description: "Updating ...",
+    image: "./images/projects/Crud_React.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/DoPhuc22/React-CRUD.git",
+    previewUrl: "/",
+  },
+  {
+    id: 3,
+    title: "Mobile Game",
+    description: "",
+    image: "./images/projects/Mobile.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/DoPhuc22/Mobile-game.git",
+    previewUrl: "/",
+  },
+  {
+    id: 4,
+    title: "Furniture Shop (PHP, MySQL)",
+    description: "",
+    image: "./images/projects/Project_1.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/DoPhuc22/Project1.git",
+    previewUrl: "/",
+  },
+];
 
 const ProjectSection = () => {
-    const [tag, setTag] = useState("All");
-    const ref = useRef(null);
-    const isInView = useInView(ref, {once:true});
+  const [tag, setTag] = useState("All");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-    const handleTagChange = (newTag:any) => {
-        setTag(newTag);
-    }
+  const handleTagChange = (newTag: any) => {
+    setTag(newTag);
+  };
 
-    const filteredProjects = ProjectData.filter((project) => 
-        project.tag.includes(tag)
-    );
+  const filteredProjects = ProjectData.filter((project) =>
+    project.tag.includes(tag)
+  );
 
-    const cardVariants = {
-        initial: { y: 50, opacity: 0 },
-        animate: { y: 0, opacity: 1 }
-    }
-    return(
-        <section id="projects">
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+  return (
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -103,7 +103,7 @@ const ProjectSection = () => {
         ))}
       </ul>
     </section>
-    )
-}
+  );
+};
 
-export default ProjectSection
+export default ProjectSection;
