@@ -16,15 +16,6 @@ const ProjectData = [
   },
   {
     id: 2,
-    title: "Crud React",
-    description: "Updating ...",
-    image: "./images/projects/Crud_React.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/DoPhuc22/React-CRUD.git",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
     title: "Mobile Game",
     description: "",
     image: "./images/projects/Mobile.png",
@@ -33,7 +24,7 @@ const ProjectData = [
     previewUrl: "/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Furniture Shop (PHP, MySQL)",
     description: "",
     image: "./images/projects/Project_1.png",
