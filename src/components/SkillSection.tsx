@@ -88,7 +88,7 @@ const LanguageSection = () => {
             >
               <Col span={24} className="flex justify-center">
                 <i
-                  className = {`${project.icon} text-7xl`}
+                  className = {`${project.icon} text-7xl hovver:visible text-white transition-all duration-300`}
                   title={project.name}
                 />
               </Col>

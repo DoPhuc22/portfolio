@@ -22,7 +22,6 @@ const TAB_DATA = [
                     <li>MySQL</li>
                     <li>PostgreSQL</li>
                     <li>Java</li>
-                    <li>Spring Boot</li>
                 </ul>
             </div>
         )
@@ -33,7 +32,6 @@ const TAB_DATA = [
         content: (
             <ul className="list-disc pl-2">
                 <li>BKACAD Academy of Technology</li>
-                <li>GPA: 3.13 (current)</li>
             </ul>
         )
     },
@@ -42,7 +40,6 @@ const TAB_DATA = [
         id: "soft_skills",
         content: (
             <ul className="list-disc pl-2">
-                <li>English communication</li>
                 <li>Teamwork skills</li>
                 <li>Hard-working</li>
             </ul>
