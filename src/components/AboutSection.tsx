@@ -31,7 +31,8 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className="list-disc pl-2">
-                <li>BKACAD Academy of Technology</li>
+                <li>BKACAD Academy of Technology.</li>
+                <li>Hanoi Open University.</li>
             </ul>
         )
     },
